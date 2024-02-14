@@ -1089,31 +1089,47 @@ li {
 @media screen and (max-width: 660px) {
   .addtips-content {
     flex-wrap: wrap;
-    row-gap: 40px;
+    row-gap: 80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .addtips-content {
+    row-gap: 100px;
   }
 }
 @media screen and (max-width: 560px) {
   .addtips-content {
     row-gap: 120px;
-    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .addtips-content {
+    row-gap: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .addtips-content {
+    row-gap: 170px;
+    margin-bottom: 120px;
   }
 }
 @media screen and (max-width: 440px) {
   .addtips-content {
-    row-gap: 140px;
-    margin-bottom: 140px;
+    row-gap: 180px;
+    margin-bottom: 160px;
   }
 }
 @media screen and (max-width: 400px) {
   .addtips-content {
-    margin-bottom: 180px;
+    row-gap: 200px;
+    margin-bottom: 190px;
   }
 }
 @media screen and (max-width: 375px) {
   .addtips-content {
     flex-wrap: nowrap;
     flex-direction: column;
-    gap: 40px;
+    row-gap: 70px;
     margin-bottom: 0;
   }
 }
@@ -1130,11 +1146,17 @@ li {
 }
 @media screen and (max-width: 560px) {
   .addtips-content__card {
-    width: 230px;
-    height: 260px;
+    width: 240px;
+    height: 270px;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 520px) {
+  .addtips-content__card {
+    width: 220px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 480px) {
   .addtips-content__card {
     width: 200px;
     height: 230px;
@@ -1159,8 +1181,7 @@ li {
   }
 }
 .addtips-content__card__img {
-  width: 90%;
-  max-height: 160px;
+  width: 100%;
 }
 .addtips-content__card__img img {
   width: 100%;

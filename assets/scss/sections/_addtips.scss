@@ -1,5 +1,6 @@
 .addtips{
   padding: 60px 0;
+
   &-title{
     font-family: $roboto;
     font-size: 32px;
@@ -16,23 +17,33 @@
     }
     @include media(660){
       flex-wrap: wrap;
-      row-gap: 40px;  
+      row-gap: 80px;
+    }
+    @include media(640){
+      row-gap: 100px;
     }
     @include media(560){
       row-gap: 120px;  
-      margin-bottom: 100px; 
+    }
+    @include media(520){
+      row-gap: 100px;   
+    }
+    @include media(480){
+      row-gap: 170px; 
+      margin-bottom: 120px; 
     }
     @include media(440){
-      row-gap: 140px; 
-      margin-bottom: 140px; 
+      row-gap: 180px; 
+      margin-bottom: 160px; 
     }
     @include media(400){
-      margin-bottom: 180px; 
+      row-gap: 200px; 
+      margin-bottom: 190px; 
     }
     @include media(375){
       flex-wrap: nowrap;
       flex-direction: column;
-      gap: 40px;
+      row-gap: 70px;
       margin-bottom: 0;
     }
 
@@ -47,10 +58,14 @@
         height: 290px;
       }
       @include media(560){
-        width: 230px;
-        height: 260px;
+        width: 240px;
+        height: 270px;
       }
-      @include media(560){
+      @include media(520){
+        width: 220px;
+        height: 270px;
+      }
+      @include media(480){
         width: 200px;
         height: 230px;
       }
@@ -69,9 +84,7 @@
 
 
       &__img{
-        width: 90%;
-        max-height: 160px;
-
+        width: 100%;
 
         img{
           width: 100%;
